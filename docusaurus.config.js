@@ -122,6 +122,9 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Daily WOD.`,
       },
+      colorMode: {
+        disableSwitch: true,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
