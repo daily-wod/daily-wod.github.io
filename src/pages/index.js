@@ -1,40 +1,43 @@
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import clsx from 'clsx';
+import AppleStoreBadge from '@site/static/img/apple_store_badge.svg'
+import styles from "./index.module.css"
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function Main() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <div className={clsx("container")}>
+      <div className={clsx("row")}>
+        <div className={clsx("col", "hero", styles.heroHeight)}>
+          <div className={clsx("container")}>
+            <h1 className={clsx("hero__title")}>Daily WOD</h1>
+            <p className={clsx("hero__subtitle")}>Record your everyday achievement</p>
+            <p >
+              Daily Ward provides an easy and intuitive feature to record your WOD. 
+              Now, let's track how much I have grown up through the record.
+            </p>
+            <div>
+              <a href="#"><AppleStoreBadge /></a>
+            </div>
+          </div>
+        </div>
+        <div className={clsx("col")}>
+          world
         </div>
       </div>
-    </header>
-  );
+    </div>
+  )
 }
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      title={`Record your WOD`}
+      description="Record your everyday achievement.">
       <main>
-        <HomepageFeatures />
+        <Main />
       </main>
     </Layout>
   );
