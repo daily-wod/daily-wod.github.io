@@ -78,7 +78,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           // {
           //   title: 'Docs',
@@ -120,7 +120,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Daily WOD, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
