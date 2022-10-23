@@ -120,7 +120,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Daily WOD, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Daily WOD.`,
       },
       prism: {
         theme: lightCodeTheme,
