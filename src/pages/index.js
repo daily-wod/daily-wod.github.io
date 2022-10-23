@@ -2,6 +2,7 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
+import ProductMockup from '@site/static/img/product_mockup.png'
 import AppleStoreBadge from '@site/static/img/apple_store_badge.svg'
 import styles from "./index.module.css"
 
@@ -22,8 +23,8 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className={clsx("col")}>
-          world
+        <div className={clsx("col", "hero", styles.heroHeight)}>
+          <img src={ProductMockup}/>
         </div>
       </div>
     </div>
