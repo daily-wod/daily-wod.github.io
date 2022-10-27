@@ -15,7 +15,7 @@ function Main() {
             <h1 className={clsx("hero__title")}>Daily WOD</h1>
             <p className={clsx("hero__subtitle")}>Record your everyday achievement</p>
             <p >
-              Daily WOD provides an easy and intuitive feature to record your WOD. 
+              Daily WOD provides easy and intuitive features to record your WOD. 
               Now, let's track how much I have grown up through the record.
             </p>
             <div>
