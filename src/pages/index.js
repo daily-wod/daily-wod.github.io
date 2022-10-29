@@ -13,17 +13,27 @@ function Main() {
         <div className={clsx("col", "hero", styles.heroHeight)}>
           <div className={clsx("container")}>
             <h1 className={clsx("hero__title")}>
-              <Translate id="index.title">Daily WOD</Translate>
+              <Translate id="index.title" description="The title of the App.">
+                Daily WOD
+              </Translate>
             </h1>
             <p className={clsx("hero__subtitle")}>
-              <Translate id="index.subtitle">
+              <Translate
+                id="index.subtitle"
+                description="The promotion description for the App."
+              >
                 Record your everyday achievement
               </Translate>
             </p>
             <p>
-              <Translate id="index.description"></Translate>
-              Daily WOD provides easy and intuitive features to record your WOD.
-              Now, let's track how much I have grown up through the record.
+              <Translate
+                id="index.description"
+                description="The detail description for the App."
+              >
+                Daily WOD provides easy and intuitive features to record your
+                WOD. Now, let's track how much I have grown up through the
+                record.
+              </Translate>
             </p>
             <div>
               {/* 앱 스토어 */}
