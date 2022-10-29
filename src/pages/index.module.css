@@ -16,6 +16,14 @@
   }
 }
 
+/* 이미지 패딩을 감안해서 스타일링 */
+.playStoreBadge {
+  width: 140px;
+  height: 60px;
+  position: relative;
+  bottom: -10px;
+}
+
 .buttons {
   display: flex;
   align-items: center;

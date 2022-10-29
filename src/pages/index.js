@@ -19,7 +19,12 @@ function Main() {
               Now, let's track how much I have grown up through the record.
             </p>
             <div>
-              <a href="#"><AppleStoreBadge /></a>
+              {/* 앱 스토어 */}
+              <a href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone" target="_blank"><AppleStoreBadge /></a>
+              {/* 플레이 스토어 */}
+              <a href='https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+                <img className={clsx(styles.playStoreBadge)} alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+              </a>
             </div>
           </div>
         </div>
