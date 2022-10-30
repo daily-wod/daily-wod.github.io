@@ -8,7 +8,7 @@
     "description": "The promotion description for the App."
   },
   "index.description": {
-    "message": "데일리와드는 와들(WOD)를 쉽고 편리하게 기록할 수 있도록 합니다. 매일의 와드를 기록하고 얼마나 성장했는지 확인해보세요.",
+    "message": "데일리와드는 와드(WOD)를 쉽고 편리하게 기록할 수 있도록 도와줍니다. 매일 와드를 기록하고 얼마나 성장했는지 확인해보세요.",
     "description": "The detail description for the App."
   },
   "App Store Icon": {
