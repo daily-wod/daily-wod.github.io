@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "@docusaurus/Head";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import Translate, { translate } from "@docusaurus/Translate";
@@ -78,6 +79,9 @@ export default function Home() {
       description="Record your everyday achievement."
     >
       <main>
+        <Head>
+          <meta property="og:image" content={ProductMockup}></meta>
+        </Head>
         <Main />
       </main>
     </Layout>

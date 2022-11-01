@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Daily WOD",
-  tagline: "Dinosaurs are cool",
+  tagline: "Record your everyday achievement",
   url: "https://www.daily-wod.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
