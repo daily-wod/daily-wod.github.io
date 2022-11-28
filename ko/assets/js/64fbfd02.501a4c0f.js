@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdaily_wod_github_io=self.webpackChunkdaily_wod_github_io||[]).push([[898],{7834:a=>{a.exports=JSON.parse('{"label":"record","permalink":"/ko/blog/tags/record","allTagsPath":"/ko/blog/tags","count":1}')}}]);

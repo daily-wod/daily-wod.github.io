@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdaily_wod_github_io=self.webpackChunkdaily_wod_github_io||[]).push([[298],{3280:o=>{o.exports=JSON.parse('{"permalink":"/ko/blog/tags/\ud06c\ub85c\uc2a4\ud54f","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

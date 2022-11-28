@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdaily_wod_github_io=self.webpackChunkdaily_wod_github_io||[]).push([[33],{657:a=>{a.exports=JSON.parse('{"label":"\ud654\uc774\ud2b8\ubcf4\ub4dc","permalink":"/ko/blog/tags/\ud654\uc774\ud2b8\ubcf4\ub4dc","allTagsPath":"/ko/blog/tags","count":1}')}}]);
