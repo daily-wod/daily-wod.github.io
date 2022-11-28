@@ -1,7 +1,7 @@
 ---
 slug: whiteboard
 title: 크로스핏과 화이트보드
-tags: [crossfit, record, whiteboard]
+tags: [크로스핏, 기록, 화이트보드]
 ---
 
 # 크로스핏과 화이트보드
