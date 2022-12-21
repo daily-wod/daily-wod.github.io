@@ -1,10 +1,8 @@
 ---
 slug: release0.3
-title: Release v0.3
+title: 릴리즈 v0.3
 tags: [release]
 ---
-
-## Release v0.3
 
 데일리와드가 새로운 버전 `v0.3`을 출시했습니다 🥳. 이 글에선 새롭게 포함된 기능들과 각 기능의 목적을 소개하도록 하겠습니다. 
 
