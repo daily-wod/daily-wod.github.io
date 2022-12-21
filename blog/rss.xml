@@ -4,10 +4,19 @@
         <title>Daily WOD Blog</title>
         <link>https://www.daily-wod.app/blog</link>
         <description>Daily WOD Blog</description>
-        <lastBuildDate>Sun, 20 Nov 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Dec 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release v0.3]]></title>
+            <link>https://www.daily-wod.app/blog/release0.3</link>
+            <guid>release0.3</guid>
+            <pubDate>Wed, 21 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Release v0.3]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="release-v03">Release v0.3<a class="hash-link" href="#release-v03" title="Direct link to heading">​</a></h2><p>Daily WOD has released a new version <code>v0.3</code>🥳 In this article, we will introduce the newly included features. </p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="calendar">Calendar<a class="hash-link" href="#calendar" title="Direct link to heading">​</a></h3><p>Records make up for poor memory. It is usually challenging to remember how often they have workout this week or this month.</p><p><strong>Daily WOD shows how many times the user has workout at a glance through the calendar.</strong> When a user adds a new WOD, it is marked with a dot on the calendar for that date. And if you select a marked date, you can see the WODs for that day.</p><img loading="lazy" src="/img/blog/2022-12-21-release0.3/calendar.gif" width="300" class="img_ev3q"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="similarity">Similarity<a class="hash-link" href="#similarity" title="Direct link to heading">​</a></h3><p>Do you plan for a WOD at what intensity (or weight), and what strategy will you choose before starting? People generally infer their ability level (or limit) through memory and experience. However, memory is not enough.</p><p><strong>Daily WOD helps you determine the intensity or strategy of a workout through previous records.</strong> When you register (or update) a new WOD, the Daily WOD will find the previous WOD, which is most similar. And the user can check his level and limit through the record.</p><img loading="lazy" src="/img/blog/2022-12-21-release0.3/similarity.gif" width="300" class="img_ev3q"><br><br><p>I would like to take this opportunity to thank you who have provided feedback. If you have any feedback, please let me know through <em>My Profile &gt; Send Feedback</em>.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Crossfit & Whiteboard]]></title>
             <link>https://www.daily-wod.app/blog/whiteboard</link>
