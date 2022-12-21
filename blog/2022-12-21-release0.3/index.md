@@ -6,7 +6,7 @@ tags: [release]
 
 ## Release v0.3
 
-Daily WOD has released a new version `v0.3`🥳 In this article, we will introduce the newly included features. 
+Daily WOD has released a new version `v0.3` 🥳. In this article, we will introduce the newly included features. 
 
 ### Calendar
 
