@@ -24,6 +24,14 @@
   bottom: -10px;
 }
 
+.headerDiv {
+  text-align: center;
+}
+
+.headerImage {
+  text-align: center;
+}
+
 .buttons {
   display: flex;
   align-items: center;
