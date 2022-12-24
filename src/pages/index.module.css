@@ -3,41 +3,52 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-/* 이미지 패딩을 감안해서 스타일링 */
-.playStoreBadge {
-  width: 140px;
-  height: 60px;
-  position: relative;
-  bottom: -10px;
-}
-
 .headerDiv {
+  padding-top: 128px;
+  padding-bottom: 260px;
   text-align: center;
+  color: #ffffff;
 }
 
-.headerImage {
+.headerDescription {
+  margin-bottom: 41px;
+}
+
+.storeBadge {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.headerImageDiv {
+  /* top 속성을 보정 */
+  height: 380px;
   text-align: center;
+  position: relative;
+  top: -325px;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contentDiv {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.heroHeight {
-  height: 95vh;
+.contentBackgroundColor {
+  background-color: #f4fffa;
+}
+
+/* 모바일 스타일을 오버라이드 */
+@media only screen and (max-width: 768px) {
+  .headerDiv {
+    padding-bottom: 10px;
+  }
+
+  .headerImageDiv {
+    display: none;
+  }
+
+  .contentDiv {
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

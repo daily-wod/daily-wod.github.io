@@ -3,8 +3,13 @@ import Head from "@docusaurus/Head";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import Translate, { translate } from "@docusaurus/Translate";
-import ProductMockup from "@site/static/img/product_mockup.png";
+// TODO: 이미지에서 패딩을 제거
+import ProductMockup from "@site/static/img/product-mockup.png";
 import AppleStoreBadge from "@site/static/img/apple_store_badge.svg";
+import HeaderBackgroundImage from "@site/static/img/header-background-image.png"
+import AppStoreBadge from "@site/static/img/app-store-badge.png"
+import PlayStoreBadge from "@site/static/img/play-store-badge.png"
+import Calendar from "@site/static/img/calendar.png"
 import styles from "./index.module.css";
 
 function Main() {
@@ -74,7 +79,7 @@ function Main() {
 
 function MainNext() {
   return (
-    <div className={clsx("container")}>
+    <div >
       <Header />
       <HeaderImage />
       <Content />
@@ -84,13 +89,19 @@ function MainNext() {
 
 function Header() {
   return (
-    <div className={clsx(styles.headerDiv)}>
+    <div
+      className={clsx(styles.headerDiv)}
+      style={{
+        backgroundImage: `url("${HeaderBackgroundImage}")`,
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <h1 className={clsx("hero__title")}>
         <Translate id="index.title" description="The title of the App.">
-          CrossFit records, Daily WOD
+          CrossFit record, Daily WOD
         </Translate>
       </h1>
-      <p>
+      <p className={clsx(styles.headerDescription)}>
         <Translate
           id="index.first description"
           description="The first detail description for the App."
@@ -116,7 +127,11 @@ function Header() {
             message: "App Store Icon",
           })}
         >
-          <AppleStoreBadge />
+          <img
+            className={clsx(styles.storeBadge)}
+            alt="Get it on App Store"
+            src={AppStoreBadge}
+          />
         </a>
         {/* 플레이 스토어 */}
         <a
@@ -127,9 +142,9 @@ function Header() {
           })}
         >
           <img
-            className={clsx(styles.playStoreBadge)}
+            className={clsx(styles.storeBadge)}
             alt="Get it on Google Play"
-            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            src={PlayStoreBadge}
           />
         </a>
       </div>
@@ -139,38 +154,57 @@ function Header() {
 
 function HeaderImage() {
   return (
-    <div className={clsx(styles.headerImage)}>
-      <img src={ProductMockup} />
+    <div className={clsx(styles.headerImageDiv)}>
+      <img src={ProductMockup} className={clsx(styles.headerImage)} />
     </div>
   )
 }
 
 function Content() {
   return (
-    <div>
-      <div className={clsx("row")}>
-        <div className={clsx("col")}>
+    <div >
+      <div className={clsx("row", styles.contentBackgroundColor)}>
+        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
+          {/* TODO: 문장 수정하기 */}
           <h2>
+            Easy and intuitive <br />
+            CrossFit record
           </h2>
+          <p>
+            Daily WOD provide easy and intuitive UI to recrod.
+          </p>
+        </div>
+        <div className={clsx("col", styles.contentDiv)}>
+          {/* 이미지 */}
+        </div>
+      </div>
+      <div className={clsx("row")}>
+        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
+          <img src={Calendar} alt="Calendar" />
+        </div>
+        <div className={clsx("col", styles.contentDiv)}>
+          <h2>
+            Check workout <br />
+            at a glance
+          </h2>
+          <p>
+            Daily WOD provide easy and intuitive UI to recrod.
+          </p>
+        </div>
+      </div>
+      <div className={clsx("row", styles.contentBackgroundColor)}>
+        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
+          <h2>
+            Check workout <br />
+            at a glance
+          </h2>
+          <p>
+            Daily WOD provide easy and intuitive UI to recrod.
+          </p>
         </div>
         <div className={clsx("col")}></div>
       </div>
-      <div className={clsx("row")}>
-        <div className={clsx("col")}>
-        </div>
-        <div className={clsx("col")}>
-          <h2>
-          </h2>
-        </div>
-      </div>
-      <div className={clsx("row")}>
-        <div className={clsx("col")}>
-          <h2>
-          </h2>
-        </div>
-        <div className={clsx("col")}></div>
-      </div>
-    </div>
+    </div >
   )
 }
 
