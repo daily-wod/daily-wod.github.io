@@ -93,17 +93,17 @@
 
   .contentUsabilityTextDiv {
     padding-top: 100px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .contentUsabilityImageDiv {
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .contentCalendarTextDiv {
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .contentCalendarImageDiv {
@@ -113,11 +113,11 @@
 
   .contentSimilarityTextDiv {
     padding-top: 100px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .contentSimilarityImageDiv {
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
