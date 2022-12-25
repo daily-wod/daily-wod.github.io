@@ -1,21 +1,57 @@
 {
   "index.title": {
-    "message": "데일리와드",
+    "message": "크로스핏 기록은, 데일리와드",
     "description": "The title of the App."
   },
-  "index.subtitle": {
-    "message": "매일의 성장을 기록해보세요",
-    "description": "The promotion description for the App."
+  "index.description part1": {
+    "message": "데일리와드는 와드(WOD)를 쉽고 편리하게 기록할 수 있도록 도와줍니다.",
+    "description": "The first detail description for the App."
   },
-  "index.description": {
-    "message": "데일리와드는 와드(WOD)를 쉽고 편리하게 기록할 수 있도록 도와줍니다. 매일 와드를 기록하고 얼마나 성장했는지 확인해보세요.",
-    "description": "The detail description for the App."
+  "index.description part2": {
+    "message": "매일 와드를 기록하고 얼마나 성장했는지 확인해보세요.",
+    "description": "The second detail description for the App."
   },
-  "App Store Icon": {
-    "message": "앱 스토어 아이콘"
+  "index.usability content title part1": {
+    "message": "쉽고 편리하게"
   },
-  "Play Store Icon": {
-    "message": "플레이 스토어 아이콘"
+  "index.usability content title part2": {
+    "message": "와드 기록"
+  },
+  "index.usability content description part1": {
+    "message": "와드(WOD)를 쉽고 편리하게"
+  },
+  "index.usability content description part2": {
+    "message": "기록할 수 있도록 도와줍니다."
+  },
+  "index.calendar content title part1": {
+    "message": "한 눈에 쏙"
+  },
+  "index.calendar content title part2": {
+    "message": "직관적인 캘린더뷰"
+  },
+  "index.calendar content description part1": {
+    "message": "한 눈에 기록을 확인할 수 있는 "
+  },
+  "index.calendar content description part2": {
+    "message": "직관적인 UI를 제공합니다."
+  },
+  "index.similarity content title part1": {
+    "message": "비슷한 와드 연결로"
+  },
+  "index.similarity content title part2": {
+    "message": "기록 비교"
+  },
+  "index.similarity content description part1": {
+    "message": "와드를 기록하면"
+  },
+  "index.similarity content description part2": {
+    "message": "비슷한 와드를 자동으로 찾아줍니다."
+  },
+  "index.footer title": {
+    "message": "와드 기록, 시작할 준비 되셨나요?"
+  },
+  "index.footer description": {
+    "message": "지금 앱을 다운로드 받으세요."
   },
   "theme.ErrorPageContent.title": {
     "message": "페이지에 오류가 발생하였습니다.",

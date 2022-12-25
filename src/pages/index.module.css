@@ -3,33 +3,121 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+.headerDiv {
+  padding-top: 128px;
+  padding-bottom: 260px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.headerDescription {
+  margin-bottom: 41px;
+}
+
+.storeBadge {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.headerImageDiv {
+  /* top 속성을 보정 */
+  height: 380px;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  top: -180px;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-/* 이미지 패딩을 감안해서 스타일링 */
-.playStoreBadge {
-  width: 140px;
-  height: 60px;
+.headerImage {
   position: relative;
-  bottom: -10px;
+  left: 22px;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 스타일 보정 */
+.rowDiv {
+  margin: unset;
 }
 
-.heroHeight {
-  height: 95vh;
+.contentUsabilityTextDiv {
+  padding-top: 250px;
+}
+
+.contentUsabilityImageDiv {
+  padding-top: 110px;
+  position: relative;
+  bottom: -8px;
+}
+
+.contentCalendarTextDiv {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.contentCalendarImageDiv {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contentSimilarityTextDiv {
+  padding-top: 250px;
+}
+
+.contentSimilarityImageDiv {
+  padding-top: 110px;
+  position: relative;
+  bottom: -8px;
+}
+
+.contentBackgroundColor {
+  background-color: #f4fffa;
+}
+
+.footerDiv {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+.footerDescription {
+  color: #828282;
+}
+
+/* 모바일 스타일을 오버라이드 */
+@media only screen and (max-width: 768px) {
+  .headerDiv {
+    padding-bottom: 10px;
+  }
+
+  .headerImageDiv {
+    display: none;
+  }
+
+  .contentUsabilityTextDiv {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .contentUsabilityImageDiv {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  .contentCalendarTextDiv {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  .contentCalendarImageDiv {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+
+  .contentSimilarityTextDiv {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .contentSimilarityImageDiv {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
 }
