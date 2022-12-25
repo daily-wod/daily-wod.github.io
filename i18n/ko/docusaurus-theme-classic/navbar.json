@@ -2,5 +2,9 @@
   "title": {
     "message": "데일리와드",
     "description": "The title in the navbar"
+  },
+  "item.label.Blog": {
+    "message": "블로그",
+    "description": "Navbar item with label Blog"
   }
 }

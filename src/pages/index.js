@@ -103,15 +103,15 @@ function Header() {
       </h1>
       <p className={clsx(styles.headerDescription)}>
         <Translate
-          id="index.first description"
+          id="index.description part1"
           description="The first detail description for the App."
         >
-          Daily WOD provides easy and intuitive features to record your
+          Daily WOD provides easy to use and intuitive features to record your
           WOD.
         </Translate>
         <br />
         <Translate
-          id="index.second description"
+          id="index.description part2"
           description="The second detail description for the App."
         >
           Now, let's track how much I have grown up through the
@@ -123,9 +123,7 @@ function Header() {
         <a
           href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
           target="_blank"
-          alt={translate({
-            message: "App Store Icon",
-          })}
+          alt="App Store Icon"
         >
           <img
             className={clsx(styles.storeBadge)}
@@ -137,9 +135,7 @@ function Header() {
         <a
           href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
           target="_blank"
-          alt={translate({
-            message: "Play Store Icon",
-          })}
+          alt="Play Store Icon"
         >
           <img
             className={clsx(styles.storeBadge)}
@@ -164,45 +160,79 @@ function Content() {
   return (
     <div >
       <div className={clsx("row", styles.contentBackgroundColor)}>
-        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
-          {/* TODO: 문장 수정하기 */}
+        <div className={clsx("col", "col--3", "col--offset-3", styles.contentDiv)}>
           <h2>
-            Easy and intuitive <br />
-            CrossFit record
+            <Translate id="index.usability content title part1">
+              Easy to use and convenient
+            </Translate>
+            <br />
+            <Translate id="index.usability content title part2">
+              Record WOD
+            </Translate>
           </h2>
           <p>
-            Daily WOD provide easy and intuitive UI to recrod.
+            <Translate id="index.usability content description part1">
+              Helps you can record your WOD
+            </Translate>
+            <br />
+            <Translate id="index.usability content description part2">
+              easily and conveniently.
+            </Translate>
           </p>
         </div>
         <div className={clsx("col", styles.contentDiv)}>
-          {/* 이미지 */}
+          {/* TODO: 이미지 추가 */}
         </div>
       </div>
       <div className={clsx("row")}>
-        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
+        <div className={clsx("col", "col--3", "col--offset-3", styles.contentDiv)}>
           <img src={Calendar} alt="Calendar" />
         </div>
         <div className={clsx("col", styles.contentDiv)}>
           <h2>
-            Check workout <br />
-            at a glance
+            <Translate id="index.calendar content title part1">
+              Check your workout
+            </Translate>
+            <br />
+            <Translate id="index.calendar content title part2">
+              at a glance
+            </Translate>
           </h2>
           <p>
-            Daily WOD provide easy and intuitive UI to recrod.
+            <Translate id="index.calendar content description part1">
+              Provides an intuitive UI so that
+            </Translate>
+            <br />
+            <Translate id="index.calendar content description part2">
+              you can check your records at a glance.
+            </Translate>
           </p>
         </div>
       </div>
       <div className={clsx("row", styles.contentBackgroundColor)}>
-        <div className={clsx("col", "col--4", "col--offset-2", styles.contentDiv)}>
+        <div className={clsx("col", "col--3", "col--offset-3", styles.contentDiv)}>
           <h2>
-            Check workout <br />
-            at a glance
+            <Translate id="index.similarity content title part1">
+              Compare to
+            </Translate>
+            <br />
+            <Translate id="index.similarity content title part2">
+              previous record
+            </Translate>
           </h2>
           <p>
-            Daily WOD provide easy and intuitive UI to recrod.
+            <Translate id="index.similarity content description part1">
+              Automatically finds similar WODs
+            </Translate>
+            <br />
+            <Translate id="index.similarity content description part2">
+              when you record a WOD.
+            </Translate>
           </p>
         </div>
-        <div className={clsx("col")}></div>
+        <div className={clsx("col")}>
+          {/* TODO: 이미지 추가 */}
+        </div>
       </div>
     </div >
   )
