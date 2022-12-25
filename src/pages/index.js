@@ -118,8 +118,8 @@ function Content() {
             </Translate>
           </p>
         </div>
-        <div className={clsx("col", styles.contentUsabilityImageDiv)}>
-          <img src={UsabilityImage} alt="Usability" height={500} />
+        <div className={clsx("col", "col--3", styles.contentUsabilityImageDiv)}>
+          <img src={UsabilityImage} alt="Usability" />
         </div>
       </div>
       <div className={clsx("row", styles.rowDiv)}>
@@ -168,8 +168,8 @@ function Content() {
             </Translate>
           </p>
         </div>
-        <div className={clsx("col", styles.contentSimilarityImageDiv)}>
-          <img src={SimilarityImage} alt="Usability" height={500} />
+        <div className={clsx("col", "col--3", styles.contentSimilarityImageDiv)}>
+          <img src={SimilarityImage} alt="Usability" />
         </div>
       </div>
     </div >
