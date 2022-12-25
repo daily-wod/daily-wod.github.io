@@ -82,9 +82,33 @@
     display: none;
   }
 
-  .contentDiv {
+  .contentUsabilityTextDiv {
+    padding-top: 100px;
     padding-left: 30px;
+  }
+
+  .contentUsabilityImageDiv {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+
+  .contentCalendarTextDiv {
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  .contentCalendarImageDiv {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+
+  .contentSimilarityTextDiv {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+
+  .contentSimilarityImageDiv {
+    padding-top: 50px;
+    padding-left: 30px;
   }
 }
