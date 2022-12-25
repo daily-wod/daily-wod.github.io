@@ -33,6 +33,36 @@
   padding-bottom: 200px;
 }
 
+.contentUsabilityTextDiv {
+  padding-top: 250px;
+}
+
+.contentUsabilityImageDiv {
+  padding-top: 110px;
+  position: relative;
+  bottom: -8px;
+}
+
+.contentCalendarTextDiv {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.contentCalendarImageDiv {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contentSimilarityTextDiv {
+  padding-top: 250px;
+}
+
+.contentSimilarityImageDiv {
+  padding-top: 110px;
+  position: relative;
+  bottom: -8px;
+}
+
 .contentBackgroundColor {
   background-color: #f4fffa;
 }
