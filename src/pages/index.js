@@ -7,6 +7,8 @@ import ProductMockup from "@site/static/img/product-mockup.png";
 import HeaderBackgroundImage from "@site/static/img/header-background-image.png"
 import AppStoreBadge from "@site/static/img/app-store-badge.png"
 import PlayStoreBadge from "@site/static/img/play-store-badge.png"
+import AppStoreColorBadge from "@site/static/img/app-store-color-badge.png"
+import PlayStoreColorBadge from "@site/static/img/play-store-color-badge.png"
 import CalendarImage from "@site/static/img/calendar.png"
 import UsabilityImage from "@site/static/img/usability.png"
 import SimilarityImage from "@site/static/img/similarity.png"
@@ -18,6 +20,7 @@ function Main() {
       <Header />
       <HeaderImage />
       <Content />
+      <Footer />
     </div>
   )
 }
@@ -170,6 +173,49 @@ function Content() {
         </div>
       </div>
     </div >
+  )
+}
+
+function Footer() {
+  return (
+    <div className={clsx(styles.footerDiv)}>
+      <h2>
+        <Translate id="index.footer title">
+          Are you ready to record a WOD?
+        </Translate>
+      </h2>
+      <p className={clsx(styles.footerDescription)}>
+        <Translate id="index.footer description">
+          Download the app now for iOS or Android.
+        </Translate>
+      </p>
+      <div>
+        {/* 앱 스토어 */}
+        <a
+          href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
+          target="_blank"
+          alt="App Store Icon"
+        >
+          <img
+            className={clsx(styles.storeBadge)}
+            alt="Get it on App Store"
+            src={AppStoreColorBadge}
+          />
+        </a>
+        {/* 플레이 스토어 */}
+        <a
+          href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          target="_blank"
+          alt="Play Store Icon"
+        >
+          <img
+            className={clsx(styles.storeBadge)}
+            alt="Get it on Google Play"
+            src={PlayStoreColorBadge}
+          />
+        </a>
+      </div>
+    </div>
   )
 }
 
