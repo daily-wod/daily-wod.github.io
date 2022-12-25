@@ -25,7 +25,16 @@
   text-align: center;
   position: relative;
   top: -180px;
+}
+
+.headerImage {
+  position: relative;
   left: 22px;
+}
+
+/* 스타일 보정 */
+.rowDiv {
+  margin: unset;
 }
 
 .contentUsabilityTextDiv {

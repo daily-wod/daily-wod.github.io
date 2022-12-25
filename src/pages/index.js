@@ -97,7 +97,7 @@ function HeaderImage() {
 function Content() {
   return (
     <div >
-      <div className={clsx("row", styles.contentBackgroundColor)}>
+      <div className={clsx("row", styles.contentBackgroundColor, styles.rowDiv)}>
         <div className={clsx("col", "col--2", "col--offset-3", styles.contentUsabilityTextDiv)}>
           <h2>
             <Translate id="index.usability content title part1">
@@ -122,7 +122,7 @@ function Content() {
           <img src={UsabilityImage} alt="Usability" height={500} />
         </div>
       </div>
-      <div className={clsx("row")}>
+      <div className={clsx("row", styles.rowDiv)}>
         <div className={clsx("col", "col--3", "col--offset-4", styles.contentCalendarImageDiv)}>
           <img src={CalendarImage} alt="Calendar" />
         </div>
@@ -147,7 +147,7 @@ function Content() {
           </p>
         </div>
       </div>
-      <div className={clsx("row", styles.contentBackgroundColor)}>
+      <div className={clsx("row", styles.contentBackgroundColor, styles.rowDiv)}>
         <div className={clsx("col", "col--2", "col--offset-3", styles.contentSimilarityTextDiv)}>
           <h2>
             <Translate id="index.similarity content title part1">
