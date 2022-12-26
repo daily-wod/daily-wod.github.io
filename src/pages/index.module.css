@@ -33,8 +33,8 @@
 }
 
 /* 스타일 보정 */
-.rowDiv {
-  margin: unset;
+.container {
+  max-width: 800px;
 }
 
 .contentUsabilityTextDiv {
@@ -43,7 +43,7 @@
 }
 
 .contentUsabilityImageDiv {
-  padding-top: 110px;
+  padding-top: 90px;
   position: relative;
   bottom: -8px;
 }
@@ -54,8 +54,8 @@
 }
 
 .contentCalendarImageDiv {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .contentSimilarityTextDiv {
@@ -64,7 +64,7 @@
 }
 
 .contentSimilarityImageDiv {
-  padding-top: 110px;
+  padding-top: 90px;
   position: relative;
   bottom: -8px;
 }

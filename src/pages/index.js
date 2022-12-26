@@ -98,9 +98,9 @@ function Content() {
   return (
     <div >
       <div className={clsx(styles.contentBackgroundColor)}>
-        <div className="container">
+        <div className={clsx("container", styles.container)}>
           <div className={clsx("row")}>
-            <div className={clsx("col", "col--3", "col--offset-2", styles.contentUsabilityTextDiv)}>
+            <div className={clsx("col", "col--5", styles.contentUsabilityTextDiv)}>
               <h2>
                 <Translate id="index.usability content title part1">
                   Easy to use and convenient
@@ -120,16 +120,16 @@ function Content() {
                 </Translate>
               </p>
             </div>
-            <div className={clsx("col", "col--5", styles.contentUsabilityImageDiv)}>
+            <div className={clsx("col", "col--7", styles.contentUsabilityImageDiv)}>
               <img src={UsabilityImage} alt="Usability" />
             </div>
           </div>
         </div>
       </div>
       <div >
-        <div className="container">
+        <div className={clsx("container", styles.container)}>
           <div className={clsx("row")}>
-            <div className={clsx("col", "col--3", "col--offset-2", styles.contentCalendarTextDiv)}>
+            <div className={clsx("col", "col--5", styles.contentCalendarTextDiv)}>
               <h2>
                 <Translate id="index.calendar content title part1">
                   Check your workout
@@ -149,16 +149,16 @@ function Content() {
                 </Translate>
               </p>
             </div>
-            <div className={clsx("col", "col--5", styles.contentCalendarImageDiv)}>
+            <div className={clsx("col", "col--7", styles.contentCalendarImageDiv)}>
               <img src={CalendarImage} alt="Calendar" />
             </div>
           </div>
         </div>
       </div>
       <div className={clsx(styles.contentBackgroundColor)}>
-        <div className="container">
+        <div className={clsx("container", styles.container)}>
           <div className={clsx("row")}>
-            <div className={clsx("col", "col--3", "col--offset-2", styles.contentSimilarityTextDiv)}>
+            <div className={clsx("col", "col--5", styles.contentSimilarityTextDiv)}>
               <h2>
                 <Translate id="index.similarity content title part1">
                   Compare to
@@ -178,7 +178,7 @@ function Content() {
                 </Translate>
               </p>
             </div>
-            <div className={clsx("col", "col--5", styles.contentSimilarityImageDiv)}>
+            <div className={clsx("col", "col--7", styles.contentSimilarityImageDiv)}>
               <img src={SimilarityImage} alt="Usability" />
             </div>
           </div>
