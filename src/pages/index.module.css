@@ -34,7 +34,7 @@
 
 /* 스타일 보정 */
 .container {
-  max-width: 800px;
+  max-width: 800px !important;
 }
 
 .contentUsabilityTextDiv {
