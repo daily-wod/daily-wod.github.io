@@ -84,7 +84,7 @@
 /* 모바일 스타일을 오버라이드 */
 @media only screen and (max-width: 768px) {
   .headerDiv {
-    padding-bottom: 100px;
+    padding-bottom: 75px;
   }
 
   .headerImageDiv {
