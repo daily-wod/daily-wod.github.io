@@ -38,7 +38,8 @@
 }
 
 .contentUsabilityTextDiv {
-  padding-top: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentUsabilityImageDiv {
@@ -48,8 +49,8 @@
 }
 
 .contentCalendarTextDiv {
-  padding-top: 200px;
-  padding-bottom: 120px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentCalendarImageDiv {
@@ -58,7 +59,8 @@
 }
 
 .contentSimilarityTextDiv {
-  padding-top: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentSimilarityImageDiv {
@@ -98,17 +100,15 @@
 
   .contentUsabilityImageDiv {
     padding-top: 50px;
-    padding-left: 20px;
   }
 
   .contentCalendarTextDiv {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 20px;
   }
 
   .contentCalendarImageDiv {
-    padding-top: 100px;
-    padding-bottom: 0px;
+    padding-top: 50px;
   }
 
   .contentSimilarityTextDiv {
@@ -118,6 +118,5 @@
 
   .contentSimilarityImageDiv {
     padding-top: 50px;
-    padding-left: 20px;
   }
 }

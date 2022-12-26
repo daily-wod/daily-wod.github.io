@@ -97,79 +97,92 @@ function HeaderImage() {
 function Content() {
   return (
     <div >
-      <div className={clsx("row", styles.contentBackgroundColor, styles.rowDiv)}>
-        <div className={clsx("col", "col--2", "col--offset-3", styles.contentUsabilityTextDiv)}>
-          <h2>
-            <Translate id="index.usability content title part1">
-              Easy to use and convenient
-            </Translate>
-            <br />
-            <Translate id="index.usability content title part2">
-              Record WOD
-            </Translate>
-          </h2>
-          <p>
-            <Translate id="index.usability content description part1">
-              Helps you can record your WOD
-            </Translate>
-            <br />
-            <Translate id="index.usability content description part2">
-              easily and conveniently.
-            </Translate>
-          </p>
-        </div>
-        <div className={clsx("col", "col--3", styles.contentUsabilityImageDiv)}>
-          <img src={UsabilityImage} alt="Usability" />
-        </div>
-      </div>
-      <div className={clsx("row", styles.rowDiv)}>
-        <div className={clsx("col", "col--3", "col--offset-4", styles.contentCalendarImageDiv)}>
-          <img src={CalendarImage} alt="Calendar" />
-        </div>
-        <div className={clsx("col", styles.contentCalendarTextDiv)}>
-          <h2>
-            <Translate id="index.calendar content title part1">
-              Check your workout
-            </Translate>
-            <br />
-            <Translate id="index.calendar content title part2">
-              at a glance
-            </Translate>
-          </h2>
-          <p>
-            <Translate id="index.calendar content description part1">
-              Provides an intuitive UI so that
-            </Translate>
-            <br />
-            <Translate id="index.calendar content description part2">
-              you can check your records at a glance.
-            </Translate>
-          </p>
+      <div className={clsx(styles.contentBackgroundColor)}>
+        <div className="container">
+          <div className={clsx("row")}>
+            <div className={clsx("col", "col--3", "col--offset-2", styles.contentUsabilityTextDiv)}>
+              <h2>
+                <Translate id="index.usability content title part1">
+                  Easy to use and convenient
+                </Translate>
+                <br />
+                <Translate id="index.usability content title part2">
+                  Record WOD
+                </Translate>
+              </h2>
+              <p>
+                <Translate id="index.usability content description part1">
+                  Helps you can record your WOD
+                </Translate>
+                <br />
+                <Translate id="index.usability content description part2">
+                  easily and conveniently.
+                </Translate>
+              </p>
+            </div>
+            <div className={clsx("col", "col--5", styles.contentUsabilityImageDiv)}>
+              <img src={UsabilityImage} alt="Usability" />
+            </div>
+          </div>
         </div>
       </div>
-      <div className={clsx("row", styles.contentBackgroundColor, styles.rowDiv)}>
-        <div className={clsx("col", "col--2", "col--offset-3", styles.contentSimilarityTextDiv)}>
-          <h2>
-            <Translate id="index.similarity content title part1">
-              Compare to
-            </Translate>
-            <br />
-            <Translate id="index.similarity content title part2">
-              previous record
-            </Translate>
-          </h2>
-          <p>
-            <Translate id="index.similarity content description part1">
-              Automatically finds similar WODs
-            </Translate>
-            <br />
-            <Translate id="index.similarity content description part2">
-              when you record a WOD.
-            </Translate>
-          </p>
+      <div >
+        <div className="container">
+          <div className={clsx("row")}>
+            <div className={clsx("col", "col--3", "col--offset-2", styles.contentCalendarTextDiv)}>
+              <h2>
+                <Translate id="index.calendar content title part1">
+                  Check your workout
+                </Translate>
+                <br />
+                <Translate id="index.calendar content title part2">
+                  at a glance
+                </Translate>
+              </h2>
+              <p>
+                <Translate id="index.calendar content description part1">
+                  Provides an intuitive UI so that
+                </Translate>
+                <br />
+                <Translate id="index.calendar content description part2">
+                  you can check your records at a glance.
+                </Translate>
+              </p>
+            </div>
+            <div className={clsx("col", "col--5", styles.contentCalendarImageDiv)}>
+              <img src={CalendarImage} alt="Calendar" />
+            </div>
+          </div>
         </div>
-        <div className={clsx("col", "col--3", styles.contentSimilarityImageDiv)}>
-          <img src={SimilarityImage} alt="Usability" />
+      </div>
+      <div className={clsx(styles.contentBackgroundColor)}>
+        <div className="container">
+          <div className={clsx("row")}>
+            <div className={clsx("col", "col--3", "col--offset-2", styles.contentSimilarityTextDiv)}>
+              <h2>
+                <Translate id="index.similarity content title part1">
+                  Compare to
+                </Translate>
+                <br />
+                <Translate id="index.similarity content title part2">
+                  previous record
+                </Translate>
+              </h2>
+              <p>
+                <Translate id="index.similarity content description part1">
+                  Automatically finds similar WODs
+                </Translate>
+                <br />
+                <Translate id="index.similarity content description part2">
+                  when you record a WOD.
+                </Translate>
+              </p>
+            </div>
+            <div className={clsx("col", "col--5", styles.contentSimilarityImageDiv)}>
+              <img src={SimilarityImage} alt="Usability" />
+            </div>
+          </div>
+
         </div>
       </div>
     </div >
