@@ -34,53 +34,56 @@ function Header() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className={clsx("hero__title")}>
-        <Translate id="index.title" description="The title of the App.">
-          CrossFit record, Daily WOD
-        </Translate>
-      </h1>
-      <p className={clsx(styles.headerDescription)}>
-        <Translate
-          id="index.description part1"
-          description="The first detail description for the App."
-        >
-          Daily WOD provides easy to use and intuitive features to record your
-          WOD.
-        </Translate>
-        <br />
-        <Translate
-          id="index.description part2"
-          description="The second detail description for the App."
-        >
-          Now, let's track how much I have grown up through the
-          record.
-        </Translate>
-      </p>
-      <div>
-        {/* 앱 스토어 */}
-        <a
-          href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
-          target="_blank"
-          alt="App Store Icon"
-        >
-          <img
-            className={clsx(styles.storeBadge)}
-            alt="Get it on App Store"
-            src={AppStoreBadge}
-          />
-        </a>
-        {/* 플레이 스토어 */}
-        <a
-          href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-          target="_blank"
-          alt="Play Store Icon"
-        >
-          <img
-            className={clsx(styles.storeBadge)}
-            alt="Get it on Google Play"
-            src={PlayStoreBadge}
-          />
-        </a>
+      <div className="container">
+        <h1 className={clsx("hero__title")}>
+          <Translate id="index.title" description="The title of the App.">
+            CrossFit record, Daily WOD
+          </Translate>
+        </h1>
+        <p className={clsx(styles.headerDescription)}>
+          <Translate
+            id="index.description part1"
+            description="The first detail description for the App."
+          >
+            Daily WOD provides easy to use and intuitive features to record your
+            WOD.
+          </Translate>
+          <br />
+          <Translate
+            id="index.description part2"
+            description="The second detail description for the App."
+          >
+            Now, let's track how much I have grown up through the
+            record.
+          </Translate>
+        </p>
+        <div>
+          {/* 앱 스토어 */}
+          <a
+            href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
+            target="_blank"
+            alt="App Store Icon"
+          >
+            <img
+              className={clsx(styles.storeBadge)}
+              alt="Get it on App Store"
+              src={AppStoreBadge}
+            />
+          </a>
+          {/* 플레이 스토어 */}
+          <a
+            href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            target="_blank"
+            alt="Play Store Icon"
+          >
+            <img
+              className={clsx(styles.storeBadge)}
+              alt="Get it on Google Play"
+              src={PlayStoreBadge}
+            />
+          </a>
+        </div>
+
       </div>
     </div>
   )
