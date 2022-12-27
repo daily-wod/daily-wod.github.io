@@ -45,7 +45,7 @@ function Header() {
             id="index.description part1"
             description="The first detail description for the App."
           >
-            Daily WOD provides easy to use and intuitive features to record your
+            Daily WOD provides easy to use and intuitive features to log your
             WOD.
           </Translate>
           <br />
@@ -110,12 +110,12 @@ function Content() {
                 </Translate>
                 <br />
                 <Translate id="index.usability content title part2">
-                  Record WOD
+                  logging WOD
                 </Translate>
               </h2>
               <p>
                 <Translate id="index.usability content description part1">
-                  Helps you can record your WOD
+                  Helps you can log your WOD
                 </Translate>
                 <br />
                 <Translate id="index.usability content description part2">
@@ -148,7 +148,7 @@ function Content() {
                 </Translate>
                 <br />
                 <Translate id="index.calendar content description part2">
-                  you can check your records at a glance.
+                  you can check your WODs at a glance.
                 </Translate>
               </p>
             </div>
@@ -168,7 +168,7 @@ function Content() {
                 </Translate>
                 <br />
                 <Translate id="index.similarity content title part2">
-                  previous record
+                  previous WOD
                 </Translate>
               </h2>
               <p>
@@ -177,7 +177,7 @@ function Content() {
                 </Translate>
                 <br />
                 <Translate id="index.similarity content description part2">
-                  when you record a WOD.
+                  when you log a WOD.
                 </Translate>
               </p>
             </div>
