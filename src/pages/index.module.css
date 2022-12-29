@@ -33,36 +33,38 @@
 }
 
 /* 스타일 보정 */
-.rowDiv {
-  margin: unset;
+.container {
+  max-width: 800px !important;
 }
 
 .contentUsabilityTextDiv {
-  padding-top: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentUsabilityImageDiv {
-  padding-top: 110px;
+  padding-top: 90px;
   position: relative;
   bottom: -8px;
 }
 
 .contentCalendarTextDiv {
-  padding-top: 200px;
-  padding-bottom: 120px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentCalendarImageDiv {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .contentSimilarityTextDiv {
-  padding-top: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contentSimilarityImageDiv {
-  padding-top: 110px;
+  padding-top: 90px;
   position: relative;
   bottom: -8px;
 }
@@ -98,17 +100,15 @@
 
   .contentUsabilityImageDiv {
     padding-top: 50px;
-    padding-left: 20px;
   }
 
   .contentCalendarTextDiv {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 20px;
   }
 
   .contentCalendarImageDiv {
-    padding-top: 100px;
-    padding-bottom: 0px;
+    padding-top: 50px;
   }
 
   .contentSimilarityTextDiv {
@@ -118,6 +118,5 @@
 
   .contentSimilarityImageDiv {
     padding-top: 50px;
-    padding-left: 20px;
   }
 }
