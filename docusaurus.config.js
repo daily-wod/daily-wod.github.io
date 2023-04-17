@@ -77,6 +77,7 @@ const config = {
           //   label: 'Tutorial',
           // },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/faq", label: "FAQ", position: "left" },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -90,10 +91,6 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/cQHVvC9rcf',
-              },
               {
                 label: 'Instagram',
                 href: 'https://www.instagram.com/__dailywod/',
