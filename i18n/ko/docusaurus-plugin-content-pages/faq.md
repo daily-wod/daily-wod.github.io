@@ -24,3 +24,10 @@ title: FAQ for Daily WOD
 라이센스 페이지에서 신청서를 작성하면 데일리와드 팀에서 메일로 인보이스(invoice)를 발행합니다.
 
 </details>
+
+<details>
+<summary><b>Q. 박스를 탈퇴하면 내가 가진 기록은 어떻게 되나요?</b></summary>
+
+걱정하시지 마세요. 박스를 탈퇴한다고 해도 자신의 기록은 여전히 확인이 가능합니다.
+
+</details>

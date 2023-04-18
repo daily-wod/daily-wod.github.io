@@ -24,3 +24,10 @@ Currently, there are two licenses: `Engage` and `Growth`. The `Engage` license i
 After you fill out the form on the license page, the DailyWOD team will send you an invoice by email.
 
 </details>
+
+<details>
+<summary><b>Q. What happened to my records when I left a box?</b></summary>
+
+Don't worry. Your records are still there even though you leave a box.
+
+</details>
