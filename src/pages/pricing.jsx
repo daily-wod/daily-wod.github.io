@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './pricing.module.css';
 
@@ -40,20 +41,32 @@ function EnterpriseHeader() {
       <div className="container">
         <div className="row">
           <div className="col col--6 col--offset-3">
-            <h1 className="hero__title">More Than Just Workouts!</h1>
-            <p className="hero__subtitle">Build a strong sense of community among your members and keep them engaged.</p>
+            <h1 className="hero__title">
+              <Translate id="pricing.title">
+                More Than Just Workouts!
+              </Translate>
+            </h1>
+            <p className="hero__subtitle">
+              <Translate id="pricing.subtitle">
+                Build a strong sense of community among your members and keep them engaged.
+              </Translate>
+            </p>
           </div>
         </div>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg margin-right--md"
             to={storeLink}>
-            Download App
+            <Translate id="pricing.download button">
+              Download App
+            </Translate>
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="mailto:noah@daily-wod.app">
-            Contact Us
+            <Translate id="pricing.contact button">
+              Contact Us
+            </Translate>
           </Link>
         </div>
       </div>
@@ -67,7 +80,9 @@ function Alert() {
       <div className="row">
         <div className="col col--6 col--offset-3">
           <div className="alert alert--success" role="alert">
-            <strong>This page is only for gyms. All the features for individuals are free.</strong>
+            <Translate id="pricing.alert">
+              This page is only for boxes. All the features for individuals are free.
+            </Translate>
           </div>
         </div>
       </div>
@@ -98,11 +113,21 @@ function PriceModel() {
                 </div>
                 <div className="card__body">
                   <p>
-                    For gyms new to Daily WOD. Easy to get up and running.
+                    <Translate id="pricing.engage license">
+                      For boxes new to Daily WOD. Easy to get up and running.
+                    </Translate>
                   </p>
                   <h2>
-                    <span>$0</span> 
-                    <span style={{fontSize: 16}}> / mo</span>
+                    <span>
+                      <Translate id="pricing.free">
+                        $0
+                      </Translate>
+                    </span> 
+                    <span style={{fontSize: 16}}>
+                      <Translate id="pricing.per month">
+                        / mo
+                      </Translate>
+                    </span>
                   </h2>
                 </div>
                 <div className="card__footer">
@@ -124,18 +149,31 @@ function PriceModel() {
               </div>
               <div className="card__body">
                 <p>
-                  For gyms that want to grow the community even more.
+                  <Translate id="pricing.growth license">
+                    For boxes that want to grow the community even more.
+                  </Translate>
                 </p>
                 <h2>
-                  <span>$6</span>
-                  <span style={{fontSize: 16}}> / 25 members / mo</span></h2>
+                  <span>
+                    <Translate id="pricing.six dollar">
+                      $6
+                    </Translate>
+                  </span>
+                  <span style={{fontSize: 16}}>
+                    <Translate id="pricing.per member per month">
+                      / 25 members / mo
+                    </Translate>
+                  </span>
+                </h2>
               </div>
               <div className="card__footer">
                 <Link
                   className="button button--secondary button--block button--lg"
                   to=""
                 >
-                  Purchase
+                  <Translate id="pricing.purchase button">
+                    Purchase
+                  </Translate>
                 </Link>
               </div>
             </div>
@@ -154,34 +192,68 @@ function FeatureTable({}) {
           <table style={{width: "100%", display: "table"}}>
             <thead>
               <tr>
-                <th style={{textAlign: "left", width: "40%"}}>Feature</th>
+                <th style={{textAlign: "left", width: "40%"}}>
+                  <Translate id="pricing.feature">
+                    Feature
+                  </Translate>
+                </th>
                 <th>Engage</th>
                 <th>Growth</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>WOD Management & Sharing</td>
+                <td>
+                  <b>
+                    <Translate id="pricing.wod management feature">
+                      WOD Management & Sharing
+                    </Translate>
+                  </b>
+                </td>
                 <td style={{textAlign: "center"}}>️✅</td>
                 <td style={{textAlign: "center"}}>✅</td>
               </tr>
               <tr>
-                <td>Tracking Performance</td>
+                <td>
+                  <b>
+                    <Translate id="pricing.tracking performance feature">
+                      Tracking Performance
+                    </Translate>
+                  </b>
+                </td>
                 <td style={{textAlign: "center"}}>✅️</td>
                 <td style={{textAlign: "center"}}>✅️</td>
               </tr>
               <tr>
-                <td>Member management</td>
+                <td>
+                  <b>
+                    <Translate id="pricing.member management feature">
+                      Member management
+                    </Translate>
+                  </b>
+                </td>
                 <td style={{textAlign: "center"}}>✅️</td>
                 <td style={{textAlign: "center"}}>✅️</td>
               </tr>
               <tr>
-                <td>AD Block</td>
+                <td>
+                  <b>
+                    <Translate id="pricing.ad block feature">
+                      AD Block
+                    </Translate>
+                  </b>
+                </td>
                 <td style={{textAlign: "center"}}></td>
                 <td style={{textAlign: "center"}}>✅️</td>
               </tr>
               <tr>
-                <td>Survey new members for feedback</td>
+                <td>
+                  <b>
+                    <Translate id="pricing.survey feature">
+                      Survey new members for feedback
+                    </Translate>
+                  </b>
+                </td>
                 <td style={{textAlign: "center"}}></td>
                 <td style={{textAlign: "center"}}>✅️</td>
               </tr>

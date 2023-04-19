@@ -307,5 +307,59 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "pricing.title": {
+    "message": "운동하는 것 그 이상을 제공해보세요!"
+  },
+  "pricing.subtitle": {
+    "message": "회원들 간에 강력한 커뮤니티를 구축하고 참여를 유도해보세요."
+  },
+  "pricing.download button": {
+    "message": "다운로드"
+  },
+  "pricing.contact button": {
+    "message": "문의하기"
+  },
+  "pricing.alert": {
+    "message": "이 페이지는 박스를 위한 가격이며, 개인을 위한 모든 기능은 무료입니다."
+  },
+  "pricing.engage license": {
+    "message": "데일리와드를 처음 시작하는 박스에서 사용합니다."
+  },
+  "pricing.free": {
+    "message": "₩0"
+  },
+  "pricing.per month": {
+    "message": "/ 월"
+  },
+  "pricing.growth license": {
+    "message": "커뮤니티를 더욱 성장시키고자 하는 박스에서 사용합니다."
+  },
+  "pricing.six dollar": {
+    "message": "₩6,000"
+  },
+  "pricing.per member per month": {
+    "message": "/ 25명 / 월"
+  },
+  "pricing.purchase button": {
+    "message": "구매하기"
+  },
+  "pricing.feature": {
+    "message": "기능"
+  },
+  "pricing.wod management feature": {
+    "message": "와드 관리 & 공유"
+  },
+  "pricing.tracking performance feature": {
+    "message": "수행 능력 추적"
+  },
+  "pricing.member management feature": {
+    "message": "회원 관리"
+  },
+  "pricing.ad block feature": {
+    "message": "광고 제거"
+  },
+  "pricing.survey feature": {
+    "message": "신규 회원 설문"
   }
 }
