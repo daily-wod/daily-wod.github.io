@@ -77,6 +77,7 @@ const config = {
           //   label: 'Tutorial',
           // },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/pricing", label: "Pricing", position: "left" },
           { to: "/faq", label: "FAQ", position: "left" },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
