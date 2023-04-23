@@ -1,67 +1,27 @@
 name: Deploy to GitHub Pages
 
 on:
-  deployment:
+  workflow_dispatch:
 
 jobs:
   deploy:
     name: Deploy to GitHub Pages
+    environment: production
     runs-on: ubuntu-latest
     steps:
-      - 
-        uses: chrnorm/deployment-status@releases/v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          deployment_id: ${{ github.event.deployment.id }}
-          description: Trigger to deploy.
-          state: queued
-          token: "${{ github.token }}"
-      - 
-        uses: chrnorm/deployment-status@releases/v1
-        with:
-          deployment_id: ${{ github.event.deployment.id }}
-          description: Start to install packages.
-          state: in_progress
-          token: "${{ github.token }}"
-      - 
-        uses: actions/checkout@v2
-      - 
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.18.0
-      - 
-        uses: chrnorm/deployment-status@releases/v1
-        with:
-          deployment_id: ${{ github.event.deployment.id }}
-          description: Start to build and deploy. 
-          state: in_progress
-          token: "${{ github.token }}"
-      - 
-        name: Build 
+          node-version: "16.18.0" # .nvmrc 파일 확인
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
+      - name: Build
         run: |
           npm install --frozen-lockfile
           npm run build
-      - 
-        name: Publish to GitHub Pages
+      - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           cname: www.daily-wod.app
-      - 
-        name: Deploy successfully
-        if: success()
-        uses: chrnorm/deployment-status@releases/v1
-        with:
-          deployment_id: ${{ github.event.deployment.id }}
-          description: Finish to deploy successfully.
-          state: "success"
-          token: "${{ github.token }}"
-      - 
-        name: Deploy failed
-        if: failure() || cancelled() 
-        uses: chrnorm/deployment-status@releases/v1
-        with:
-          deployment_id: ${{ github.event.deployment.id }}
-          description: Failed to deploy.
-          state: "failure"
-          token: "${{ github.token }}"
