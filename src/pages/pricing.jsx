@@ -140,7 +140,9 @@ function PriceModel() {
                     className="button button--secondary button--block button--lg"
                     to={storeLink}
                   >
-                    Download App
+                    <Translate id="pricing.download button">
+                      Download App
+                    </Translate>
                   </Link>
                 </div>
               </div>
