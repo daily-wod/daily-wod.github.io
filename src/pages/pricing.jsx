@@ -43,7 +43,7 @@ function EnterpriseHeader() {
           <div className="col col--6 col--offset-3">
             <h1 className="hero__title">
               <Translate id="pricing.title">
-                More Than Just Workouts!
+                The Power of Connection.
               </Translate>
             </h1>
             <p className="hero__subtitle">
@@ -90,8 +90,13 @@ function Alert() {
   )
 }
 
+const purchaseForm = "https://online.forms.app/noah-lee/purchase-growth-license"
+const purchaseFormKO = "https://online.forms.app/noah-lee/purchase-growth-license-ko"
+
 function PriceModel() {
   const [storeLink, setStoreLink ] = React.useState(playStore);
+  const {i18n} = useDocusaurusContext();
+
 
   React.useEffect(() => {
     if (
@@ -169,7 +174,8 @@ function PriceModel() {
               <div className="card__footer">
                 <Link
                   className="button button--secondary button--block button--lg"
-                  to=""
+                  target='_blank'
+                  to={i18n.currentLocale === "ko" ? purchaseFormKO : purchaseForm}
                 >
                   <Translate id="pricing.purchase button">
                     Purchase
