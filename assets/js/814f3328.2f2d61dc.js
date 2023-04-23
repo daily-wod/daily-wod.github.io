@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdaily_wod_github_io=self.webpackChunkdaily_wod_github_io||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Release v0.3","permalink":"/blog/release0.3"},{"title":"Crossfit & Whiteboard","permalink":"/blog/whiteboard"}]}')}}]);

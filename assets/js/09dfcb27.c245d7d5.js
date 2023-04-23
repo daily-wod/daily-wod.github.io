@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdaily_wod_github_io=self.webpackChunkdaily_wod_github_io||[]).push([[3185],{6220:s=>{s.exports=JSON.parse('{"label":"crossfit","permalink":"/blog/tags/crossfit","allTagsPath":"/blog/tags","count":1}')}}]);
