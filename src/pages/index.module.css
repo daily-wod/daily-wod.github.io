@@ -4,8 +4,8 @@
  */
 
 .headerDiv {
-  padding-top: 128px;
-  padding-bottom: 260px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   text-align: center;
   color: #ffffff;
 }
@@ -37,40 +37,50 @@
   max-width: 800px !important;
 }
 
-.contentUsabilityTextDiv {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.contentUsabilityImageDiv {
-  padding-top: 90px;
-  position: relative;
-  bottom: -8px;
-}
-
-.contentCalendarTextDiv {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.contentCalendarImageDiv {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.contentSimilarityTextDiv {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.contentSimilarityImageDiv {
-  padding-top: 90px;
-  position: relative;
-  bottom: -8px;
+.contentDiv {
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .contentBackgroundColor {
-  background-color: #f4fffa;
+  background-color: #F8F8F8;
+}
+
+.content1RMBadgeDiv {
+  margin-bottom: 20px;
+}
+
+.textCategory {
+  color: var(--ifm-color-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.textPreLine {
+  white-space: pre-line;
+}
+
+.textLightColor {
+  color: #E0E0E0;
+}
+
+.textWODTitle {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.textLeaderboardTitle {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.text1RMTitle {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.imgBadge {
+  margin: 0 5px 0 5px;
 }
 
 .footerDiv {
@@ -93,6 +103,21 @@
     display: none;
   }
 
+  .textWODTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .textLeaderboardTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .text1RMTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
   .contentUsabilityTextDiv {
     padding-top: 100px;
     padding-left: 20px;

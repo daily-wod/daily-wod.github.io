@@ -11,42 +11,6 @@
     "message": "매일 와드를 기록하고 얼마나 성장했는지 확인해보세요.",
     "description": "The second detail description for the App."
   },
-  "index.usability content title part1": {
-    "message": "쉽고 편리하게"
-  },
-  "index.usability content title part2": {
-    "message": "와드 기록"
-  },
-  "index.usability content description part1": {
-    "message": "와드(WOD)를 쉽고 편리하게"
-  },
-  "index.usability content description part2": {
-    "message": "기록할 수 있도록 도와줍니다."
-  },
-  "index.calendar content title part1": {
-    "message": "한 눈에 쏙"
-  },
-  "index.calendar content title part2": {
-    "message": "직관적인 캘린더뷰"
-  },
-  "index.calendar content description part1": {
-    "message": "한 눈에 기록을 확인할 수 있는 "
-  },
-  "index.calendar content description part2": {
-    "message": "직관적인 UI를 제공합니다."
-  },
-  "index.similarity content title part1": {
-    "message": "비슷한 와드 연결로"
-  },
-  "index.similarity content title part2": {
-    "message": "기록 비교"
-  },
-  "index.similarity content description part1": {
-    "message": "와드를 기록하면"
-  },
-  "index.similarity content description part2": {
-    "message": "비슷한 와드를 자동으로 찾아줍니다."
-  },
   "index.footer title": {
     "message": "와드 기록, 시작할 준비 되셨나요?"
   },
@@ -361,5 +325,32 @@
   },
   "pricing.survey feature": {
     "message": "신규 회원 설문"
+  },
+  "index.wod content badge": {
+    "message": "와드"
+  },
+  "index.wod content title part1": {
+    "message": "내일은 무슨 와드?"
+  },
+  "index.wod content title part2": {
+    "message": "새로운 와드를 \n가장 쉽게 확인"
+  },
+  "index.wod content description": {
+    "message": "새로운 와드를 회원들에게 알려주세요. 회원들이 더 기대하도록 만들어보세요."
+  },
+  "index.leaderboard content badge": {
+    "message": "리더보드"
+  },
+  "index.leaderboard content title part1": {
+    "message": "회원들과 기록을 \n공유해보세요"
+  },
+  "index.leaderboard content title part2": {
+    "message": "기록을 통해 동기부여하고 \n성취감도 느껴보세요"
+  },
+  "index. content badge": {
+    "message": "1RM"
+  },
+  "index.1rm content title": {
+    "message": "성장을 기록하는 \n나의 1RM"
   }
 }

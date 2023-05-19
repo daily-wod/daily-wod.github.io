@@ -3,22 +3,29 @@ import Head from "@docusaurus/Head";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
-import ProductMockup from "@site/static/img/product-mockup.png";
 import HeaderBackgroundImage from "@site/static/img/header-background-image.png"
 import AppStoreBadge from "@site/static/img/app-store-badge.png"
 import PlayStoreBadge from "@site/static/img/play-store-badge.png"
 import AppStoreColorBadge from "@site/static/img/app-store-color-badge.png"
 import PlayStoreColorBadge from "@site/static/img/play-store-color-badge.png"
-import CalendarImage from "@site/static/img/calendar.png"
-import UsabilityImage from "@site/static/img/usability.png"
-import SimilarityImage from "@site/static/img/similarity.png"
+import WhiteboardImage from "@site/static/img/whiteboard.png"
+import HomeImage from "@site/static/img/home.png"
+import LeaderboardImage from "@site/static/img/leaderboard.png"
+import OneRepMaxImage from "@site/static/img/one-rep-max.png"
+import BadgeSquatsImage from "@site/static/img/badges/squats.png"
+import BadgeCleansImage from "@site/static/img/badges/cleans.png"
+import BadgeDeadliftsImage from "@site/static/img/badges/deadlifts.png"
+import BadgePressesImage from "@site/static/img/badges/presses.png"
+import BadgeJerksImage from "@site/static/img/badges/jerks.png"
+import BadgeOlympicLiftsImage from "@site/static/img/badges/olympic-lifts.png"
+import BadgeSnatchesImage from "@site/static/img/badges/snatches.png"
+import BadgeOtherImage from "@site/static/img/badges/other.png"
 import styles from "./index.module.css";
 
 function Main() {
   return (
     <div >
       <Header />
-      <HeaderImage />
       <Content />
       <Footer />
     </div>
@@ -31,7 +38,6 @@ function Header() {
       className={clsx(styles.headerDiv)}
       style={{
         backgroundImage: `url("${HeaderBackgroundImage}")`,
-        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="container">
@@ -45,16 +51,14 @@ function Header() {
             id="index.description part1"
             description="The first detail description for the App."
           >
-            Daily WOD provides easy to use and intuitive features to log your
-            WOD.
+            Daily WOD provides easy to use and intuitive features to log WOD.
           </Translate>
           <br />
           <Translate
             id="index.description part2"
             description="The second detail description for the App."
           >
-            Now, let's track how much I have grown up through the
-            record.
+            Now, let's track how much I have grown up through logging.
           </Translate>
         </p>
         <div>
@@ -89,103 +93,100 @@ function Header() {
   )
 }
 
-function HeaderImage() {
-  return (
-    <div className={clsx(styles.headerImageDiv)}>
-      <img src={ProductMockup} className={clsx(styles.headerImage)} />
-    </div>
-  )
-}
-
 function Content() {
   return (
     <div >
-      <div className={clsx(styles.contentBackgroundColor)}>
-        <div className={clsx("container", styles.container)}>
+      <div >
+        <div className={clsx("container", styles.container, styles.contentDiv)}>
           <div className={clsx("row")}>
-            <div className={clsx("col", "col--5", styles.contentUsabilityTextDiv)}>
-              <h2>
-                <Translate id="index.usability content title part1">
-                  Easy to use and convenient
+            <div className={clsx("col", "col--6")}>
+              <p className={clsx(styles.textCategory)}>
+                <Translate id="index.wod content badge">
+                  WOD
                 </Translate>
+              </p>
+              <h2 className={clsx(styles.textWODTitle)}>
+                <span className={clsx(styles.textLightColor)}>
+                  <Translate id="index.wod content title part1">
+                    What is tomorrow's WOD?
+                  </Translate>
+                </span>
                 <br />
-                <Translate id="index.usability content title part2">
-                  logging WOD
-                </Translate>
+                <span className={clsx(styles.textPreLine)}>
+                  <Translate id="index.wod content title part2">
+                    {"Easiest way \nto share a new WOD"}
+                  </Translate>
+                </span>
               </h2>
+              <img src={WhiteboardImage} alt="Whiteboard"/>
+            </div>
+            <div className={clsx("col", "col--5", "col--offset-1" )}>
+              <img src={HomeImage} alt="Home Image" />
               <p>
-                <Translate id="index.usability content description part1">
-                  Helps you can log your WOD
-                </Translate>
-                <br />
-                <Translate id="index.usability content description part2">
-                  easily and conveniently.
+                <Translate id="index.wod content description">
+                  Relase a WOD and let members know instantly. 
+                  Give members something to look forward to.
                 </Translate>
               </p>
             </div>
-            <div className={clsx("col", "col--7", styles.contentUsabilityImageDiv)}>
-              <img src={UsabilityImage} alt="Usability" />
+          </div>
+        </div>
+      </div>
+      <div className={clsx(styles.contentBackgroundColor, )}>
+        <div className={clsx("container", styles.container, styles.contentDiv)}>
+          <div className={clsx("row")}>
+            <div className={clsx("col", "col--6")}>
+              <p className={clsx(styles.textCategory)}>
+                <Translate id="index.leaderboard content badge">
+                  Leaderboard
+                </Translate>
+              </p>
+              <h2 className={clsx(styles.textLeaderboardTitle, styles.textPreLine)}>
+                <Translate id="index.leaderboard content title part1">
+                  Share records with other members
+                </Translate>
+              </h2>
+              <h2 className={clsx(styles.textLightColor, styles.textPreLine)}>
+                <Translate id="index.leaderboard content title part2">
+                  Logging keeps me motivated and gives me a sense of accomplishment.
+                </Translate>
+              </h2>
+            </div>
+            <div className={clsx("col", "col--5", "col--offset-1")}>
+              <img src={LeaderboardImage} alt="Leaderboard" />
             </div>
           </div>
         </div>
       </div>
       <div >
-        <div className={clsx("container", styles.container)}>
+        <div className={clsx("container", styles.container, styles.contentDiv)}>
           <div className={clsx("row")}>
-            <div className={clsx("col", "col--5", styles.contentCalendarTextDiv)}>
-              <h2>
-                <Translate id="index.calendar content title part1">
-                  Check your workout
-                </Translate>
-                <br />
-                <Translate id="index.calendar content title part2">
-                  at a glance
-                </Translate>
-              </h2>
-              <p>
-                <Translate id="index.calendar content description part1">
-                  Provides an intuitive UI so that
-                </Translate>
-                <br />
-                <Translate id="index.calendar content description part2">
-                  you can check your WODs at a glance.
+            <div className={clsx("col", "col--6")}>
+              <p className={clsx(styles.textCategory)}>
+                <Translate id="index. content badge">
+                  1RM
                 </Translate>
               </p>
-            </div>
-            <div className={clsx("col", "col--7", styles.contentCalendarImageDiv)}>
-              <img src={CalendarImage} alt="Calendar" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={clsx(styles.contentBackgroundColor)}>
-        <div className={clsx("container", styles.container)}>
-          <div className={clsx("row")}>
-            <div className={clsx("col", "col--5", styles.contentSimilarityTextDiv)}>
-              <h2>
-                <Translate id="index.similarity content title part1">
-                  Compare to
-                </Translate>
-                <br />
-                <Translate id="index.similarity content title part2">
-                  previous WOD
+              <h2 className={clsx(styles.text1RMTitle, styles.textPreLine)}>
+                <Translate id="index.1rm content title">
+                  Logging growth with 1RM
                 </Translate>
               </h2>
-              <p>
-                <Translate id="index.similarity content description part1">
-                  Automatically finds similar WODs
-                </Translate>
-                <br />
-                <Translate id="index.similarity content description part2">
-                  when you log a WOD.
-                </Translate>
-              </p>
+              <div className={clsx(styles.content1RMBadgeDiv)}>
+                <img src={BadgeSquatsImage} alt="squats" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeCleansImage} alt="cleans" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeDeadliftsImage} alt="deadlifts" className={clsx(styles.imgBadge)}/>
+                <img src={BadgePressesImage} alt="presses" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeJerksImage} alt="jerks" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeOlympicLiftsImage} alt="olympic lifts" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeSnatchesImage} alt="snatches" className={clsx(styles.imgBadge)}/>
+                <img src={BadgeOtherImage} alt="other" className={clsx(styles.imgBadge)}/>
+              </div>
             </div>
-            <div className={clsx("col", "col--7", styles.contentSimilarityImageDiv)}>
-              <img src={SimilarityImage} alt="Usability" />
+            <div className={clsx("col", "col--5", "col--offset-1")}>
+              <img src={OneRepMaxImage} alt="1RM" />
             </div>
           </div>
-
         </div>
       </div>
     </div >
@@ -194,42 +195,44 @@ function Content() {
 
 function Footer() {
   return (
-    <div className={clsx(styles.footerDiv)}>
-      <h2>
-        <Translate id="index.footer title">
-          Are you ready to record a WOD?
-        </Translate>
-      </h2>
-      <p className={clsx(styles.footerDescription)}>
-        <Translate id="index.footer description">
-          Download the app now for iOS or Android.
-        </Translate>
-      </p>
-      <div>
-        {/* 앱 스토어 */}
-        <a
-          href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
-          target="_blank"
-          alt="App Store Icon"
-        >
-          <img
-            className={clsx(styles.storeBadge)}
-            alt="Get it on App Store"
-            src={AppStoreColorBadge}
-          />
-        </a>
-        {/* 플레이 스토어 */}
-        <a
-          href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-          target="_blank"
-          alt="Play Store Icon"
-        >
-          <img
-            className={clsx(styles.storeBadge)}
-            alt="Get it on Google Play"
-            src={PlayStoreColorBadge}
-          />
-        </a>
+    <div className={clsx(styles.footerDiv, styles.contentBackgroundColor)}>
+      <div className="container">
+        <h2>
+          <Translate id="index.footer title">
+            Are you ready to record a WOD?
+          </Translate>
+        </h2>
+        <p className={clsx(styles.footerDescription)}>
+          <Translate id="index.footer description">
+            Download the app now for iOS or Android.
+          </Translate>
+        </p>
+        <div>
+          {/* 앱 스토어 */}
+          <a
+            href="https://apps.apple.com/us/app/daily-wod/6444047196?platform=iphone"
+            target="_blank"
+            alt="App Store Icon"
+          >
+            <img
+              className={clsx(styles.storeBadge)}
+              alt="Get it on App Store"
+              src={AppStoreColorBadge}
+            />
+          </a>
+          {/* 플레이 스토어 */}
+          <a
+            href="https://play.google.com/store/apps/details?id=app.daily_wod.release&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            target="_blank"
+            alt="Play Store Icon"
+          >
+            <img
+              className={clsx(styles.storeBadge)}
+              alt="Get it on Google Play"
+              src={PlayStoreColorBadge}
+            />
+          </a>
+        </div>
       </div>
     </div>
   )
@@ -243,7 +246,7 @@ export default function Home() {
     >
       <main>
         <Head>
-          <meta property="og:image" content={ProductMockup}></meta>
+          <meta property="og:image" content={HomeImage}></meta>
         </Head>
         <Main />
       </main>
