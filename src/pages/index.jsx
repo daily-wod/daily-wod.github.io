@@ -51,16 +51,14 @@ function Header() {
             id="index.description part1"
             description="The first detail description for the App."
           >
-            Daily WOD provides easy to use and intuitive features to log your
-            WOD.
+            Daily WOD provides easy to use and intuitive features to log WOD.
           </Translate>
           <br />
           <Translate
             id="index.description part2"
             description="The second detail description for the App."
           >
-            Now, let's track how much I have grown up through the
-            record.
+            Now, let's track how much I have grown up through logging.
           </Translate>
         </p>
         <div>
@@ -143,12 +141,12 @@ function Content() {
                   Leaderboard
                 </Translate>
               </p>
-              <h2 className={clsx(styles.textLeaderboardTitle)}>
+              <h2 className={clsx(styles.textLeaderboardTitle, styles.textPreLine)}>
                 <Translate id="index.leaderboard content title part1">
                   Share records with other members
                 </Translate>
               </h2>
-              <h2 className={clsx(styles.textLightColor)}>
+              <h2 className={clsx(styles.textLightColor, styles.textPreLine)}>
                 <Translate id="index.leaderboard content title part2">
                   Logging keeps me motivated and gives me a sense of accomplishment.
                 </Translate>
@@ -169,7 +167,7 @@ function Content() {
                   1RM
                 </Translate>
               </p>
-              <h2 className={clsx(styles.text1RMTitle)}>
+              <h2 className={clsx(styles.text1RMTitle, styles.textPreLine)}>
                 <Translate id="index.1rm content title">
                   Logging growth with 1RM
                 </Translate>
