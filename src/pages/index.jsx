@@ -106,15 +106,9 @@ function Content() {
                 </Translate>
               </p>
               <h2 className={clsx(styles.textWODTitle)}>
-                <span className={clsx(styles.textLightColor)}>
-                  <Translate id="index.wod content title part1">
-                    What is tomorrow's WOD?
-                  </Translate>
-                </span>
-                <br />
                 <span className={clsx(styles.textPreLine)}>
                   <Translate id="index.wod content title part2">
-                    {"Easiest way \nto share a new WOD"}
+                    {"Easiest way \nto log your WODs"}
                   </Translate>
                 </span>
               </h2>
@@ -124,36 +118,10 @@ function Content() {
               <img src={HomeImage} alt="Home Image" />
               <p>
                 <Translate id="index.wod content description">
-                  Relase a WOD and let members know instantly. 
-                  Give members something to look forward to.
+                  Just snap a photo of the whiteboard
+                  the app extracts the text and saves your workout instantly.
                 </Translate>
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={clsx(styles.contentBackgroundColor, )}>
-        <div className={clsx("container", styles.container, styles.contentDiv)}>
-          <div className={clsx("row")}>
-            <div className={clsx("col", "col--6")}>
-              <p className={clsx(styles.textCategory)}>
-                <Translate id="index.leaderboard content badge">
-                  Leaderboard
-                </Translate>
-              </p>
-              <h2 className={clsx(styles.textLeaderboardTitle, styles.textPreLine)}>
-                <Translate id="index.leaderboard content title part1">
-                  Share records with other members
-                </Translate>
-              </h2>
-              <h2 className={clsx(styles.textLightColor, styles.textPreLine)}>
-                <Translate id="index.leaderboard content title part2">
-                  Logging keeps me motivated and gives me a sense of accomplishment.
-                </Translate>
-              </h2>
-            </div>
-            <div className={clsx("col", "col--5", "col--offset-1")}>
-              <img src={LeaderboardImage} alt="Leaderboard" />
             </div>
           </div>
         </div>

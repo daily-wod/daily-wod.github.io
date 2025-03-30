@@ -66,24 +66,6 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/pricing", label: "Pricing", position: "left" },
-          { to: "/faq", label: "FAQ", position: "left" },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {
@@ -101,10 +83,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'Privacy Policy',
                 href: '/privacy',
